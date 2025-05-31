@@ -1,0 +1,519 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    font-size: none;
+    overflow-x: hidden;
+    user-select: none;
+    background-color: ededed;
+    
+
+}
+/* .theme-toggler 
+{
+    background: rgb(29, 29, 82);
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+.container
+{
+    display:grid;
+    grid-template-columns: 20% auto 17%;
+    /* border: 2px solid yellow; */
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    width: 96%;
+    gap :1.8rem;
+    margin: 0 auto;
+}
+a
+{
+     /* border: 2px solid yellow;  */
+     color: rgb(30, 30, 52);
+}
+h1
+{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2
+{
+    font-size: 1.4rem;
+}
+h3
+{
+    font-size: 0.87rem;
+
+}
+h4
+{
+    font-size: 0.8rem;
+    
+}
+h5
+{
+    font-size: 0.77rem;
+    
+}
+small
+{
+    font-size: 0.75rem;
+}
+.profile-photo img
+{
+    width:2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-muted
+{
+    color: rgb(16, 16, 28);
+}
+p
+{
+     color: rgb(16, 16, 28);
+}
+b
+{
+     color: rgb(16, 16, 28);
+}
+.primary
+{
+     color: rgb(16, 16, 28);
+}
+.success
+{
+    color: rgb(86, 242, 86);
+}
+.danger
+{
+    color: rgb(236, 19, 19);
+}
+.warning
+{
+    color:rgb(30, 25, 25);
+}
+.left
+{
+     height: 100vh ;
+}
+.left .top
+{
+    background-color:#dbd0d0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+.left.logo
+{
+    display:flex ;
+    gap:1rem; 
+}
+.left.top div.close
+{
+    display: none;
+}
+/* =============================================sidebar========================================= */
+
+.left .sidebar
+{
+ background-color: #e8e6e6;
+ display: flex;
+ flex-direction: column;
+ height: 85vh;
+ position: relative;
+ top: 1rem;
+ overflow-y: scroll;
+ box-shadow: 2px 3px 4px;
+
+}
+.left .h3
+{
+    font-weight: 500;
+
+}
+.left .sidebar a
+{
+    display: flex;
+    color: rgb(30, 30, 56);
+    margin-left: 1rem;
+    gap: 5px;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+}
+.left .sidebar a span
+{
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+
+}
+.left .sidebar a:last-child
+{
+    position: absolute;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.left .sidebar a:hover
+{
+    background-color: rgb(41, 41, 59) ;
+    color:gainsboro;
+    border-left: 2px solid darkgray;
+}
+.left .sidebar a:active
+{
+    background-color: rgb(41, 41, 59) ;
+    color:gainsboro;
+    border-left: 2px solid darkgray;
+}
+/* ===================================main body==================== */
+.main
+{
+    margin-top: 3.4rem;
+
+
+}
+.insights
+{
+   height: 25%;
+    width: 90%;
+    position: relative;
+   /* border: 2px solid yellow; */
+    justify-content: center;
+    align-items: center;
+   margin-top: 3%;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10%;
+    
+   
+    
+
+    
+    
+}
+.insights .sales
+{   
+    background: #e8e6e6;
+    position: relative;
+    border: 2px solid none;
+    box-shadow:  1px 2px 3px;
+    height: 10rem;
+    margin-top: 1%;
+    width:30%;
+    border-radius: 1rem;
+    padding: 5px;
+    margin-left: 0;
+
+}
+.insights .expenses
+{   
+    background: #e8e6e6;
+    box-shadow:  1px 2px 3px;
+    position: relative;
+    border: 2px solid none;
+    height: 10rem;
+    margin-top: 1%;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 5px;
+    
+}
+.insights .profit
+{
+     background: #e8e6e6;
+    box-shadow:  1px 2px 3px;
+    position: relative;
+    border: 2px solid none ;
+    height: 10rem;
+    margin-top: 1%;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 5px;
+     
+}
+.statistics
+{
+    border: 2px solid none;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 3px;
+    height: 100vh;
+    background: #e8e6e6;
+    width: 96%;
+    padding-left: 1rem;
+}
+.statistics table
+{
+    margin-top: 2%;
+  
+}
+.statistics td 
+{
+     padding-left: 1rem;
+     padding-top: 0.7rem;
+     border-bottom: 1px solid rgb(154, 148, 148);
+     border-left: 2px solid rgb(154, 148, 148);
+    
+}
+.statistics th
+{   
+   padding-right: 3rem;
+  
+}
+span
+{
+    color: blue;
+}
+.percentage
+{
+    border: 2px solid green;
+   float: right;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    transform: rotate(270, 80, 80);
+    stroke-width: 5;
+    stroke: aquamarine;
+    
+}
+.recent-updates
+{   
+    margin-top: 1rem;
+    /* border: 2px solid none;
+    box-shadow: 1px 2px 3px; */
+    padding: 3px;
+    border-radius: 4px;
+    background: #dbd0d0;
+    border-left: 1px solid gray;
+    
+
+}
+
+.sales-analytic
+{
+    margin-top: 1.5rem;
+   
+}
+.item-online
+{
+     background: #dbd0d0
+}
+/*================================================ start right side-=============================== */
+.right
+{
+    margin-top: 1.4rem;
+
+}
+.right h2
+{
+    color: darkblue;
+
+} 
+.right .top
+{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+
+}
+.right .top button
+{
+    display: none;
+
+}
+.right .theme-toggler
+{
+     font-size: 1.2rem;
+     width: 30%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #dbd0d0;
+     border: 2px solid #dbd0d0;
+     border-radius: 10px;
+     
+}
+.item-online
+{
+    border:  2px solid #dbd0d0;
+    height: 7rem;
+    padding: 9px;
+    margin-top: 1rem;
+    border-radius: 6px;
+    box-shadow: 1px 2px 3px;
+
+}
+.right-text
+{
+    float:right;
+}
+.item-online .icon
+{
+    float: left;
+    border: 2px solid #dbd0d0;
+    border-radius: 50%;
+    margin-top: 9%;
+    margin-left: 3%;
+    height: 4rem;
+    width: 4rem;
+    padding: 4.2%;
+    font-size: 250%;
+    background: #dbd0d0;
+    padding-bottom: 6%;
+}
+.add
+{
+    border: 2px dotted gray;
+    height: 3rem;
+    background: #dbd0d0;
+    margin-top: 3rem;
+    line-break:auto;
+    padding-top: 1rem;
+    padding-left: 46%;
+ 
+    
+}
+/* -=======================media query -============================*/
+
+
+@media screen and (max-width: 1200px)
+{
+    .container
+    {
+        width:94%;
+        grid-template-columns: 7rem auto 14rem;
+
+    }
+    .left .sidebar h3
+    {
+        display: none;
+    }
+    .left .sidebar a:last-child
+    {
+        position: relative;
+        margin-top: 1.8rem ;
+    }
+    .main .insights
+    {
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+    }
+}
+
+/* -------------------media query for phones -===============*/
+@media screen and (max-width:768px)
+ {
+    .container
+    {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .left{
+        position: fixed;
+        width: 18rem;
+        z-index: 3;
+        background-color: #e8e6e6;
+        display: none;
+        
+    }
+    .left.logo h2
+
+{
+    display: inline;
+} 
+.left.sidebar h3
+{
+    display: inline;
+}
+.left.sidebar a
+{
+    width: 100%;
+    height:3.4rem ;
+
+}
+.left.top .close span
+{
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin-left: 30px;
+    font-size: 35px;
+
+}
+.right.top
+{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.8rem;
+    background: #dbd0d0;
+    width: 100%;
+    height: 4.6rem;
+    z-index: 2;
+    box-shadow: 1px 2px 3px;
+    margin: 0;
+
+}
+.main.insights
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.6rem;
+    padding: 40px;
+
+}
+.main.recent-updates
+{
+    padding: 30px;
+    margin: 0 auto;
+
+}
+.right.profile-photo
+{
+    position: absolute;
+    left: 70%;
+
+}
+.right.top.theme-toggler
+{
+    width: 4.4rem;
+    position: absolute;
+    left: 50%;
+
+}
+.right.recent-updates
+{
+    padding: 30px ;
+}
+.right.sales-analytic
+{padding: 30px;
+}
+.add{
+    padding: 30%;
+}
+.right.top button
+{
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    color:darkblue ;
+    position: absolute;
+    left: 1rem;
+}
+}
